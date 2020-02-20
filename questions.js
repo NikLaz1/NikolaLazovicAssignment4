@@ -6,33 +6,33 @@ var questions = [
     },
   
     {
-        title: "Which of the following is true for the TTC?",
-        choices: ["It's always on time", "There are no delays", "It's clean", "It's all we have"],
-        answer: "It's all we have"
+        title: "What tag is used to specify a section of text that has been quoted from another source?",
+        choices: ["<blockquote>", "<a>", "<em>", "<strong>"],
+        answer: "<blockquote>"
     },
   
     {
-        title: "What is the most common reason for a subway delay?",
-        choices: ["Alien attack", "Broken TTC GPS", "Drunk road drivers", "Signal problems"],
-        answer: "Signal problems"
+        title: "What tag is used to define a container for an external app or plug-in?",
+        choices: ["<embed>", "<code>", " <!DOCTYPE>", "<caption>"],
+        answer: "<embed>"
     },
   
     {
-        title: "Which of the following is NOT a TTC Subway Station:",
-        choices: ["Eglinton", "Yonge", "Trump", "Spadina"],
-        answer: "Trump"
+        title: "What tag is used to define an interactive field where users can enter data?",
+        choices: ["<enterpoint>", "<dialog>", "<datalist>", "<input>"],
+        answer: "<input>"
     },
   
     {
-        title: "What is the typical subway passengers' daily commute prayer?",
-        choices: ["Please let me be on time today", "Pray? I control my own destiny"],
-        answer: "Please let me be on time today"
+        title: "What tag is used to define a standard cell inside a table?",
+        choices: ["<button>", "<footer>", "<h1> to <h6>", "<td>"],
+        answer: "<td>"
     },
   
     {
-        title: "The TTC stands for:",
-        choices: ["This That Cow", "To Thedius Clyde", "Toronto Transit Commission", "The Tall Canine"],
-        answer: "Toronto Transit Commission"
+        title: "What tag is used to render or transform text into an important (bold) version?",
+        choices: ["<blockquote> ", "<em>", "<strong>", "<a>"],
+        answer: "<strong>"
     },
   
   
