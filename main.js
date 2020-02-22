@@ -10,6 +10,7 @@ var answerChoices = document.getElementById("answers");
 
 var questionNumber = -1;
 var answer;
+var countdown;
 
 //This program has four functions: one starts the timer, one sets it, third makes questions, and final displays score
 function startTimer() {
@@ -28,7 +29,7 @@ function startTimer() {
 
 function setTimer() {
 
-    var countdown = setInterval(function () {
+    countdown = setInterval(function () {
         secondsLeft--;
         timerElement.textContent = "Time: " + secondsLeft;
 
@@ -41,7 +42,12 @@ function setTimer() {
 
 function makeQuestions() {
     questionNumber++;
-    answer = questions[questionNumber].answer
+    if (questionNumber === questions.length) {
+        clearInterval(countdown);
+        setTimeout(displayScore, 500);
+        return;
+    }
+    answer = questions[questionNumber].answer;
 
     questionHead.textContent = questions[questionNumber].title;
     answerChoices.innerHTML = "";
